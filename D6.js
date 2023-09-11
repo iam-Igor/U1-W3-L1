@@ -271,9 +271,7 @@ console.log(thatFilm);
 */
 
 const firstFilm = movies.findIndex((n) => {
-  const choosenFIlm2 = n.Year;
-
-  return choosenFIlm2;
+  return n.Year === "2001";
 });
 
 console.log(firstFilm);
