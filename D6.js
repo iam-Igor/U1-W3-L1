@@ -4,7 +4,8 @@
 */
 
 const string = function (str, str1) {
-  const result = str.slice(0, 2) + str1.slice(-3);
+  let result = str.slice(0, 2) + str1.slice(-3);
+  result = result.toUpperCase();
   return result;
 };
 console.log(string("ciao", "epicode"));
@@ -217,7 +218,8 @@ const movies = [
 */
 
 const allFilms = movies.forEach((film) => {
-  return parseInt(Math.min(film.Year));
+  const olderfilm = parseInt(Math.min(film.Year));
+  return olderfilm;
 });
 console.log(allFilms);
 /* ESERCIZIO 10
